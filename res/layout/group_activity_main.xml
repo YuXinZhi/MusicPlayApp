@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main_music_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 音乐名 -->
+
+        <TextView
+            android:id="@+id/tv_main_music_name"
+            style="@style/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="70sp"
+            android:layout_marginTop="20sp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:text="@string/main_music_name" />
+
+        <!-- 歌手名 -->
+
+        <TextView
+            android:id="@+id/tv_main_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_main_music_name"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="7sp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:singleLine="true"
+            android:text="@string/main_artist_name"
+            android:textColor="#e0e0e0"
+            android:textSize="14sp" />
+
+        <!-- 播放按钮 -->
+
+        <ImageButton
+            android:id="@+id/btn_main_play"
+            android:layout_width="50sp"
+            android:layout_height="47sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_main_music_name"
+            android:layout_marginRight="17sp"
+            android:background="@drawable/btn_main_play" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/music_land_bg"
+        android:clickable="true"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_above="@id/main_view_pager"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_music"
+            style="@style/titlemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="歌曲" />
+
+        <Button
+            android:id="@+id/btn_artist"
+            style="@style/titlemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="歌手" />
+
+        <Button
+            android:id="@+id/btn_list"
+            style="@style/titlemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="列表" />
+
+        <Button
+            android:id="@+id/btn_online"
+            style="@style/titlemenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="在线" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_view_pager"
+        android:background="@drawable/category_item_bg1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_view_pager"
+        android:background="@drawable/category_item_bg1" />
+    <!-- 三角游标 -->
+
+    <ImageView
+        android:id="@+id/iv_title_cursor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_view_pager"
+        android:src="@drawable/textview_panel_arrow_up" />
+
+</RelativeLayout>
