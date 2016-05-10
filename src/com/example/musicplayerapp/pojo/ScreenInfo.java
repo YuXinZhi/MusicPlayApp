@@ -1,4 +1,4 @@
-package com.example.musicplayerapp.ui;
+package com.example.musicplayerapp.pojo;
 
 import android.app.Activity;
 import android.util.DisplayMetrics;

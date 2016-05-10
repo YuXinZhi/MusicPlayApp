@@ -3,9 +3,9 @@ package com.example.musicplayerapp;
 import java.util.List;
 
 import com.example.musicplayerapp.pojo.Music;
+import com.example.musicplayerapp.pojo.ScreenInfo;
 import com.example.musicplayerapp.service.MusicPlayService;
 import com.example.musicplayerapp.ui.MusicPlayActivity;
-import com.example.musicplayerapp.ui.ScreenInfo;
 import com.example.musicplayerapp.utils.MusicNum;
 import com.example.musicplayerapp.utils.MusicUtils;
 
