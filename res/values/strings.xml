@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">音乐播放器</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">设置</string>
@@ -11,5 +10,4 @@
     <string name="main_music_name">歌曲名</string>
     <string name="main_artist_name">歌手名</string>
     <string name="nosongs">没有歌曲</string>
-
 </resources>
